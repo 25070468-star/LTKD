@@ -1,0 +1,48 @@
+body{
+    font-family: Arial;
+    margin:0;
+}
+
+/* Navigation bar */
+nav{
+    background:#444;
+}
+
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+nav ul li{
+    display:inline-block;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    display:inline-block;
+}
+
+nav ul li a:hover{
+    background:#666;
+}
+
+/* Content */
+section{
+    padding:30px;
+}
+
+article{
+    margin-bottom:30px;
+}
+
+/* Footer */
+footer{
+    background:#444;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+}
