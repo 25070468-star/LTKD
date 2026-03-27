@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Liên hệ - Flower Shop</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #CCCCCC;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 12px;
+        }
+        #wrap {
+            background: #ffffff;
+            margin: 20px auto;
+            width: 900px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        header {
+            background: url('images/header.jpg');
+            background-color: #444; 
+            height: 200px;
+            width: 900px;
+        }
+        #logo { padding: 20px 0 0 50px; }
+        #menu_top {
+            margin-top: 55px;
+            margin-left: 30px;
+            background: rgba(255, 255, 255, 0.6);
+            height: 40px;
+            border-radius: 10px 0 0 10px;
+        }
+        .level1 { list-style-type: none; padding-top: 12px; margin: 0; }
+        .level1 li { display: inline; float: left; padding: 0 20px 0 0; font-weight: bold; }
+        .level1 li a { text-decoration: none; color: #B81F22; }
+        .level1 li a:hover { color: green; }
+
+        #welcome {
+            background: #fff;
+            padding: 8px;
+            border: dotted 2px #9C0;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #center_content {
+            width: 900px;
+            min-height: 450px;
+            padding-bottom: 20px;
+        }
+
+        .title {
+            color: #B81F22;
+            font-size: 17px;
+            font-weight: bold;
+            margin: 20px 15px;
+        }
+
+        /* --- CSS RIÊNG CHO TRANG LIÊN HỆ --- */
+        .contact_container {
+            display: flex;
+            padding: 0 20px;
+            gap: 20px;
+        }
+        .contact_info {
+            flex: 1;
+            line-height: 1.8;
+        }
+        .contact_form {
+            flex: 1;
+            background: #fdfdfd;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .contact_form input, .contact_form textarea {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .btn_send {
+            background-color: #B81F22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .map_box {
+            padding: 20px;
+            text-align: center;
+        }
+        iframe {
+            border: 1px solid #ccc;
+            width: 100%;
+            height: 250px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #eee url('images/footer.jpg') bottom;
+            height: 100px;
+            border-top: dashed 1px #ccc;
+            clear: both;
+        }
+        #footer .left { float: left; padding: 20px; color: #666; }
+        #footer .right { float: right; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <header id="header">
+            <div id="logo"><img src="images/logo.gif" width="150" height="82" alt="Flower Shop"></div>
+            <nav id="menu_top">
+                <ul class="level1">
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Flower Category</a></li>
+                    <li><a href="dangky.html">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="lienhe.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="welcome">
+            <marquee>Liên hệ với Flower Shop để được hỗ trợ tốt nhất!</marquee>
+        </div>
+
+        <section id="center_content">
+            <div class="title">
+                <img src="img/bullet.png" width="20" height="20" align="top"> THÔNG TIN LIÊN HỆ
+            </div>
+
+            <div class="contact_container">
+                <div class="contact_info">
+                    <p><strong>FLOWER SHOP CO., LTD</strong></p>
+                    <p>📍 <strong>Địa chỉ:</strong> 01 Hoa Binh, Ninh Kieu, Can Tho</p>
+                    <p>📞 <strong>Điện thoại:</strong> 0900.000.001</p>
+                    <p>📧 <strong>Email:</strong> contact@flowershop.vn</p>
+                    <p>⏰ <strong>Giờ làm việc:</strong> 8:00 AM - 9:00 PM</p>
+                </div>
+
+                <div class="contact_form">
+                    <form action="#">
+                        <input type="text" placeholder="Họ và tên của bạn" required>
+                        <input type="email" placeholder="Địa chỉ Email" required>
+                        <input type="text" placeholder="Tiêu đề">
+                        <textarea rows="4" placeholder="Nội dung tin nhắn..."></textarea>
+                        <button type="submit" class="btn_send">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map_box">
+                <div class="title" style="margin-left: 0; font-size: 14px;">Bản đồ cửa hàng</div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.847333158448!2d105.7820127147424!3d10.033100692828555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0629f6de3edb7%3A0x527f0d01c7418f3d!2zMDEgSMOyYSBCw6xuaCwgVMOibiBBbiwgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1620000000000!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="left">
+                <strong style="color: blue">Flower Shop Co., Ltd - Vietnam Branch</strong><br>
+                <span style="color: blue">Address: 01 - Hoa Binh - Ninh Kieu Dist - Can Tho City</span><br>
+                <span style="color: blue">Tel: 0900000001</span>
+            </div>
+            <div class="right"><img src="images/flower-shop-footer.webp" width="97" height="29"></div>
+        </footer>
+    </div>
+
+</body>
+</html>
